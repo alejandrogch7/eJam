@@ -34,7 +34,9 @@ main {
     background-color: #252F3D;
     height: 50px;
 }
-
+.header--container-mobile{
+    display: none;
+}
 .header--element {
     display: flex;
     flex-direction: row;
