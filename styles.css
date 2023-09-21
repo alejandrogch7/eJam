@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope';
+}
+body::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #252F3D;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+}
+
+main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header--container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    width: 100%;
+    background-color: #252F3D;
+    height: 50px;
+}
+
+.header--element {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.header--element img {
+    margin-right: 5px;
+}
+
+.logos {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logos--right img:first-child {
+    margin: 0 30px 0 0;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    font-size: 48px;
+}
+
+.title h3 {
+    font-weight: normal;
+    color: #4D5254;
+}
+
+.steps {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 60px 0 40px 0;
+}
+
+.step img {
+    margin-right: 10px;
+}
+
+.main--content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 100%;
+    margin-bottom: 50px;
+    padding: 40px;
+    flex: 2;
+    gap: 40px;
+}
+
+.main--content-element{
+    height: 100%;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.main--content-element img:first-child{
+    max-width: 100%;
+}
+.element-left{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.blue{
+    color: #2C7EF8;
+}
+.check{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.theButton button{
+    background-color: #59AE43;
+    border: none;
+    color: white;
+    border-radius: 50px;
+    height: 60px;
+    width: 80%;
+}
+.redText{
+    display: flex;
+    width: 80%;
+    color: red;
+    justify-content: center;
+    font-weight: bold;
+}
+.satisfactionClass{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 10px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #252F3D;
+    color: white;
+}
+.footer--container{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.secure{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+/*Media queries*/
+@media screen and (max-width: 600px) {
+    .container{
+        width: 95%;
+    }
+    .header--container{
+        display: none;
+    }
+    .header--container-mobile{
+        color: white;
+        background-color: #252F3D;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+    .slider-mobile{
+        overflow: hidden;
+    }
+    .slider-inner{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        height: 100px;
+    }
+    .image-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20% 0 20%;
+    }
+    .arrowButton{
+        margin: 0 20px 0 20px;
+    }
+    .arrowButton button{
+        background-color: #252F3D;
+        border: none;
+        cursor: pointer;
+    }
+
+    .title h1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .main--content{
+        flex-direction: column;
+    }
+    .element-left{
+        width: 100%;
+    }
+    .left-title, .checks, .overview-product, .theOffer, .theButton, .theCards, .redText {
+        margin-bottom: 20px;
+    }
+    .step{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .theButton{
+        display: flex;
+        justify-content: center;
+    }
+    .redText{
+        width: 100%;
+    }
+    .satisfactionClass{
+        width: 100%;
+    }
+    .footer--container{
+        flex-direction: column;
+    }
+
+}
