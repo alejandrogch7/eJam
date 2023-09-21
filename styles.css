@@ -138,6 +138,10 @@ main {
     border-radius: 50px;
     height: 60px;
     width: 80%;
+    cursor: pointer;
+}
+.theButton button:hover{
+    background-color: #3d792e;       
 }
 .redText{
     display: flex;
